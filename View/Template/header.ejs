@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="../css/styleheader.css">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <div style="text-align: center;">  
+      <img style="padding-right: 30%;" title="ATN-Shop" width="300px" src="../img/9eb6abaa-8cda-456c-ad66-26ba4da23ffe.jpg"/>
+    </div>
+    <a class="navbar-brand" href="#">ATN-shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><hhello/span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <%configHeader.forEach(function(hitem) { %>
+          <li class="nav-item <% if (hitem.name == currpage) { %>
+            active <%}%> ">
+            <a class="nav-link" href="<%=hitem.link%>"><%=hitem.name%></a>
+          </li>
+        <% }); %>
+
+        
+        
+      </ul>
+      
+
+      
+      <ul><form style="right: 20px;" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form></ul>
+      
+
+        <% if (username) { %> %>
+          <ul class="nav-item">
+            <p style="color: gold; margin-left: 20%;"><%=username%></p>
+            <center><a style="margin-left: 15%;" class="nav-link" href="/logout">Logout</a></center>
+          </ul>          
+        <% } %>
+
+        <% if (currpage == "Product") { %>
+          <span style="color:white;">
+              <i class="fas fa-shopping-cart"></i>
+              Cart 
+              <span id="numberItems"></span>
+          </span>
+        <%}%>
+     
+    </div>
+  </nav>

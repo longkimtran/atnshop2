@@ -1,0 +1,121 @@
+.col-center-block { 
+    float: none;    
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.login .modal-body {    
+background-color: #485563;  
+color: #FFF;
+}
+
+.login .division {  
+    float: none;    
+    margin: 0 auto 18px;    
+    overflow: hidden;   
+    position: relative; 
+    text-align: center; 
+    width: 100%;
+    }
+
+.login .division .line {    
+    border-top: 1px solid black;  
+    position: absolute; 
+    top: 10px;  
+    width: 34%; 
+}
+     
+.login .division .line.l {  
+    left: 0;
+}
+     
+.login .division .line.r {  
+    right: 0;
+}
+     
+.login .division span { 
+    color: black;    
+    font-size: 17px;
+}
+
+.login .box .social {   
+        float: none;    
+        margin: 0 auto 30px;    
+        text-align: center;
+}
+         
+.login .social .circle {    
+    background-color: #EEEEEE;  
+    color: #FFFFFF; 
+    -moz-border-radius: 100px;  
+    -webkit-border-radius: 100px;   
+    border-radius: 100px;   
+    display: inline-block;  
+    margin: 0 17px; padding: 15px;
+}
+         
+.login .social .circle .fa {    
+    font-size: 16px;
+}
+         
+.login .social .facebook {  
+    background-color: #455CA8;  
+    color: #FFFFFF;
+}
+
+.login .social .google {    
+    background-color: #F74933;
+}
+         
+.login .social .github {    
+    background-color: #403A3A;
+}
+         
+.login .facebook:hover {    
+    background-color: #6E83CD;
+}
+         
+.login .google:hover {  
+    background-color: #FF7566;
+}
+         
+.login .github:hover {  
+    background-color: #4D4D4d;
+}
+
+.login .form-control {  
+    -moz-border-radius: 3px;    
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    background-color: rgba(0, 0, 0, 0.09);  
+    -moz-box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;   
+    -webkit-box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;    
+    box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.09) inset;    
+    color: #FFFFFF;
+}
+             
+.login .form-control:hover {    
+    background-color: rgba(0, 0, 0, .16);
+}
+             
+.login .form-control:focus {    
+    -moz-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;   
+    -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;    
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.04) inset;    
+    background-color: rgba(0, 0, 0, 0.23);  
+    color: #FFFFFF;
+}
+             
+.login .box .form input[type="text"], .login .box .form input[type="password"] {    
+    -moz-border-radius: 3px;    
+    -webkit-border-radius: 3px; 
+    border-radius: 3px; 
+    border: none;   
+    color:#CCC; 
+    font-size: 16px;    
+    height: 46px;   
+    margin-bottom: 5px; 
+    padding: 13px 12px; 
+    width: 100%;
+}
