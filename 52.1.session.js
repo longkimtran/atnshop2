@@ -56,7 +56,7 @@ app.set('view engine', 'ejs');
 
 /// ------------------ Khai bao cac Control, hàm , ... 
 /// ..................................................
-app.get('/', homePage);
+app.get('/home', homePage);
 function homePage(req, res) {
     if (session.user) 
     {
