@@ -25,7 +25,7 @@ var atob = require('atob');
 /// ------------------ CONFIG
 var configHeader = require("./View/config/configHeader");
 var configDB = require("./View/config/configDB");
-const PORT = process.env.PORT || 8081;
+const PORT = process.env.PORT || 8080;
 var urldb = configDB.localdb.urldb;
 
 
