@@ -1,0 +1,27 @@
+
+<html lang="en">
+    <head>
+        <%- include ('../Template/head', { title: title } ); %>
+    </head>
+    <body>
+
+        <header>
+            <%- include ('../Template/header', { username: null, configHeader: configHeader, currpage : currpage  }); %>
+        </header>
+
+        <main>
+            <div class="container" style="text-align: center;" >
+                <%-content%>
+                <p>YOU CAN SCAN QR IN HERE TO CONNECT TO THE FACEBOOK OF ADMIN OR THE HOME OF WEB</p>
+                <p>!!!THANK YOU!!!</p>
+            </div>
+        </main>
+            
+
+
+    </body>
+    <footer>
+        <%- include ('../Template/footer'); %>
+    </footer>
+
+</html> 

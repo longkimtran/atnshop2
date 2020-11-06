@@ -1,0 +1,50 @@
+
+<html lang="en">
+    <head>
+        <%- include ('../template/head', { title: title } ); %>
+    </head>
+    <body>
+
+        <header>
+            <%- include ('../template/header', { username: null, configHeader:configHeader, currpage : currpage  }); %>
+        </header>
+
+        <main>
+            <div class="container" style="text-align: center;" >
+                <h1 style="margin-top: 2%; color: red;">Toys World</h1>
+                <div class="row">
+                    <%products.forEach(function(product) { %>
+                        <%- include('product-one', {product: product}); %>
+                    <% }); %>
+                </div>
+            </div>
+
+
+
+        </main>
+          
+        
+        <%- include ('../template/footer'); %>
+
+
+    </body>
+
+    <script>
+        
+        function add_to_cart(id, name, price) {
+
+            $.ajax({
+                url: '/product/add_to_cart',
+                type: 'get',
+                success: function(cart) {
+                    
+                },
+                data: {id: id, name: name, price: parseInt(price)}
+
+            })
+        
+        }
+        
+    </script>
+
+</html> 

@@ -1,0 +1,16 @@
+.label{
+    margin-left: 15px;
+}
+
+.panel-left-right{
+    margin-top: 15px; 
+    margin-bottom:15px; 
+    display: flex;
+    margin-left: -20%;
+}.panel-left-right img{
+    margin-left: 5%;
+}
+.filter-list-box{
+    margin-left: 10%;
+    margin-bottom: 20%;
+}
