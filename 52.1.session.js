@@ -33,7 +33,7 @@ var urldb = configDB.clouddb.urldb;
 var libDB = require("./View/lib/libDB_Query");
 
 /// ------------------ Khai bao cac Folder Tĩnh, Session, Cookies
-app.use(express.static('public'));
+app.use(express.static('Public'));
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({extended: true}));
 /// session
