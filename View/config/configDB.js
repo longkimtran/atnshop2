@@ -1,6 +1,6 @@
 module.exports = {
     localdb: {
-        urldb : 'mongodb://localhost:27017/Lion-Shop',
+        urldb : 'mongodb+srv://longkimtran:btQd33lgrP92gc4h@cluster0.zysed.mongodb.net/mydatabase?retryWrites=true&w=majority',
         dbname : "Lion-Shop",
         dbusername : "",
         dbpassword : "",
